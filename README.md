@@ -1,12 +1,50 @@
-# README
+# Aaron A. Rich
 
-This project is for my personal site, which is hosted at [aaronarich.com](https://aaronarich.com/)
+Personal website of Aaron A. Rich, a Front-End Developer based in Atlanta, GA.
 
-**Built and hosted by [Netlify](https://netlify.com)**
+Hosted at [aaronarich.com](https://aaronarich.com).
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f0e95cc3-379c-4a49-b4d4-c19b4d20abe2/deploy-status)](https://app.netlify.com/sites/v1-aaronarich/deploys)
+## Tech Stack
 
+*   **Static Site Generator:** [Jekyll](https://jekyllrb.com/)
+*   **Language:** Ruby 3.2.3
 
-**Also P2P hosted by [Hashbase.io](https://hashbase.io)**
+## Local Development
 
-[dat://df6dcb6f934c2a18a8666d32159928d739ab24a2c10f1525cc51f96277792f80/](dat://df6dcb6f934c2a18a8666d32159928d739ab24a2c10f1525cc51f96277792f80/)
+### Prerequisites
+
+*   Ruby 3.2.3
+*   Bundler 2.4.19
+
+### Installation
+
+1.  Clone the repository.
+2.  Install dependencies:
+
+    ```bash
+    bundle install
+    ```
+
+    *Note: If you encounter permission errors, you may need to configure a local path for gems:*
+    ```bash
+    bundle config set path 'vendor/bundle'
+    bundle install
+    ```
+
+### Usage
+
+To start the local development server:
+
+```bash
+bundle exec jekyll serve
+```
+
+The site will be available at `http://localhost:4000`.
+
+### Building
+
+To build the site for production:
+
+```bash
+bundle exec jekyll build
+```

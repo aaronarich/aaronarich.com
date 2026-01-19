@@ -2,12 +2,13 @@
 
 Personal website of Aaron A. Rich, a Front-End Developer based in Atlanta, GA.
 
-Hosted at [aaronarich.com](https://aaronarich.com).
+Hosted on [Cloudflare Pages](https://pages.cloudflare.com/) at [aaronarich.com](https://aaronarich.com).
 
 ## Tech Stack
 
 *   **Static Site Generator:** [Jekyll](https://jekyllrb.com/)
 *   **Language:** Ruby 3.2.3
+*   **Hosting:** [Cloudflare Pages](https://pages.cloudflare.com/)
 
 ## Local Development
 
@@ -48,3 +49,7 @@ To build the site for production:
 ```bash
 bundle exec jekyll build
 ```
+
+## Deployment
+
+The site is automatically deployed to Cloudflare Pages upon pushing to the `main` branch. The build configuration is managed via `wrangler.toml`.

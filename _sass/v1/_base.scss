@@ -91,6 +91,11 @@ a {
   p > & {
     text-decoration: underline;
     text-underline-offset: 0.15em;
+
+    // Hover swaps the underline for the border-bottom below (avoids a double line).
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   &:hover {

@@ -2,7 +2,7 @@
   Responsive, lazy-loaded WebP image.
   Usage: {% include image.html src="/assets/dir/1" alt="..." width=1200 height=929 %}
   `src` is the path WITHOUT extension; expects `<src>.webp` (1200w) and `<src>-600.webp`.
-  Optional: class (default "w-100"), eager=true for above-the-fold images.
+  Optional: class (default "w-100").
 {%- endcomment -%}
 <img src="{{ include.src | relative_url }}.webp"
      srcset="{{ include.src | relative_url }}-600.webp 600w, {{ include.src | relative_url }}.webp 1200w"
@@ -10,4 +10,4 @@
      width="{{ include.width }}" height="{{ include.height }}"
      alt="{{ include.alt | escape }}"
      class="{{ include.class | default: 'w-100' }}"
-     loading="{% if include.eager %}eager{% else %}lazy{% endif %}" decoding="async">
+     loading="lazy" decoding="async">

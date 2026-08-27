@@ -42,7 +42,7 @@ order: 2
 <div class="fl pv3 pv3-ns">
 
   <div class="fl-ns w-100 mv3 browser">
-    {% include image.html src="/assets/mc_atlanta/1" alt="Screenshot of the Guide to Atlanta website" width=1200 height=929 class="w-100" eager=true %}
+    {% include image.html src="/assets/mc_atlanta/1" alt="Screenshot of the Guide to Atlanta website" width=1200 height=929 class="w-100" %}
   </div>
 
 </div>

@@ -17,7 +17,7 @@ For lack of a better option, I decided to create this web app as a proof-of-conc
 
 While this does require me to update and deploy changes to her portfolio manually, it also puts the power in my hands to adjust things to her liking from afar, as she lives in Asheville. I can then deploy my changes without needing to walk her through how to go to the App Store and download a new version. This project will continue to see improvements as I hope to add new features in the future.
 
-{% include image.html src="/assets/posts/stock-stickler/stock-stickler" alt="Stock Stickler on iPad" width=1200 height=1682 class="w-100" eager=true %}
+{% include image.html src="/assets/posts/stock-stickler/stock-stickler" alt="Stock Stickler on iPad" width=1200 height=1682 class="w-100" %}
 
 
 - See it live here [https://stocks.aaronarich.com/](https://stocks.aaronarich.com/)

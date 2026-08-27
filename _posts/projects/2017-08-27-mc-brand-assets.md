@@ -42,7 +42,7 @@ order: 0
 <div class="fl pv3 pv3-ns">
 
   <div class="fr-ns w-100 ml3-l mv3 browser">
-    {% include image.html src="/assets/mc_brand_assets/1" alt="Screenshot of the MailChimp brand assets website" width=1200 height=4706 class="w-100" eager=true %}
+    {% include image.html src="/assets/mc_brand_assets/1" alt="Screenshot of the MailChimp brand assets website" width=1200 height=4706 class="w-100" %}
   </div>
 
 </div>

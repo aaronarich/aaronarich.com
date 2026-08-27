@@ -37,7 +37,7 @@ order: 1
 <div class="fl pv3 pv3-ns">
 
   <div class="fr-ns w-100 ml3-l mv3 browser">
-    {% include image.html src="/assets/mc_holiday_survey/1" alt="Screenshot of the MailChimp Holiday Survey website" width=1200 height=929 class="w-100" eager=true %}
+    {% include image.html src="/assets/mc_holiday_survey/1" alt="Screenshot of the MailChimp Holiday Survey website" width=1200 height=929 class="w-100" %}
   </div>
 
 </div>

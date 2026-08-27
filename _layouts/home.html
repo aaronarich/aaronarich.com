@@ -4,7 +4,7 @@ layout: default
 
 <div class="w-100 center">
 
-  <h1 class="f2 f1-m f-headline-l gradient greeting"></h1>
+  <h1 class="f2 f1-m f-headline-l gradient greeting">Hello!</h1>
 
   <div class="f4 f3-l lh-copy measure-wide mb5 mb6-ns">
     {{ content }}
@@ -13,21 +13,16 @@ layout: default
   <h1 class="gradient">Most Recent Posts</h1>
 
   <ul class="list pl0">
-    {% assign recent_post = site.posts %}
-    {% for post in recent_post limit: 3 %}
-      {% if post.projects != 'projects' %}
+    {% assign recent_posts = site.posts | where_exp: "post", "post.projects != 'projects'" %}
+    {% for post in recent_posts limit: 3 %}
       <li class="pv3 pv4-ns bt b--black-10">
-        {% assign date_format = site.v1.date_format | default: "%B %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
 
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
       </li>
-      {% endif %}
     {% endfor %}
   </ul>
 
 </div>
-
-{% include greeting.html %}

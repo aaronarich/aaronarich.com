@@ -4,7 +4,7 @@ layout: default
 
 <article class="w-100 center">
 
-  <h1 class="f2 f1-m f-headline-l gradient m0">{{ page.title | escape }}</h1>
+  <h1 class="f2 f1-m f-headline-l gradient">{{ page.title | escape }}</h1>
 
   <div class="fn fl-ns w-50-ns">
     <div class="measure lh-copy">
@@ -43,35 +43,19 @@ layout: default
       </span>
     </div>
 
-    <div class="fn fl-ns w-100">
+    {%- comment -%} Populated client-side from Last.fm by /assets/js/albums.js; stays hidden if that fails. {%- endcomment -%}
+    <div class="fn fl-ns w-100" data-albums hidden>
       <h2 class="pt4">Albums Of The Week</h2>
 
-      <div class="fl-ns pr4-ns pb3 w-100 w-50-m w-25-l">
-        <div class="fl-ns albumArt0"></div>
-        <span class="db f3 albumName0"></span>
-        <span class="f5 albumArtist0"></span>
+      {% for i in (1..4) %}
+      <div class="fl-ns pr4-ns pb3 w-100 w-50-m w-25-l" data-album>
+        <div class="fl-ns album-art"></div>
+        <span class="db f3 album-name"></span>
+        <span class="f5 album-artist"></span>
       </div>
-
-      <div class="fl-ns pr4-ns pb3 w-100 w-50-m w-25-l">
-        <div class="fl-ns albumArt1"></div>
-        <span class="db f3 albumName1"></span>
-        <span class="f5 albumArtist1"></span>
-      </div>
-
-      <div class="fl-ns pr4-ns pb3 w-100 w-50-m w-25-l">
-        <div class="fl-ns albumArt2"></div>
-        <span class="db f3 albumName2"></span>
-        <span class="f5 albumArtist2"></span>
-      </div>
-
-      <div class="fl-ns pr4-ns pb3 w-100 w-50-m w-25-l">
-        <div class="fl-ns albumArt3"></div>
-        <span class="db f3 albumName3"></span>
-        <span class="f5 albumArtist3"></span>
-      </div>
+      {% endfor %}
 
     </div>
   </div>
-
 
 </article>

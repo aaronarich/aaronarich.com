@@ -42,7 +42,7 @@ order: 2
 <div class="fl pv3 pv3-ns">
 
   <div class="fl-ns w-100 mv3 browser">
-    <img alt="Screenshot of the Guide to Atlanta website" src="{{ site.url }}/assets/mc_atlanta/1.jpg" class="w-100"/>
+    {% include image.html src="/assets/mc_atlanta/1" alt="Screenshot of the Guide to Atlanta website" width=1200 height=929 class="w-100" eager=true %}
   </div>
 
 </div>
@@ -50,7 +50,7 @@ order: 2
 <div class="fl pv3 pv3-ns">
 
   <div class="fl-ns w-100 w-100 mv3 browser">
-    <img alt="Screenshot of the Guide to Atlanta website" src="{{ site.url }}/assets/mc_atlanta/2.jpg" class="w-100"/>
+    {% include image.html src="/assets/mc_atlanta/2" alt="Screenshot of the Guide to Atlanta website" width=1200 height=2922 class="w-100" %}
   </div>
 
 </div>
@@ -58,7 +58,7 @@ order: 2
 <div class="fl pv3 pv3-ns">
 
   <div class="fl-ns w-100 w-100 mv3 browser">
-    <img alt="Screenshot of the Guide to Atlanta website" src="{{ site.url }}/assets/mc_atlanta/3.jpg" class="w-100"/>
+    {% include image.html src="/assets/mc_atlanta/3" alt="Screenshot of the Guide to Atlanta website" width=1200 height=4688 class="w-100" %}
   </div>
 
 </div>
@@ -66,7 +66,7 @@ order: 2
 <div class="fl pv3 pv3-ns">
 
   <div class="fl-ns w-100 w-100 mv3 browser">
-    <img alt="Screenshot of the Guide to Atlanta website" src="{{ site.url }}/assets/mc_atlanta/4.jpg" class="w-100"/>
+    {% include image.html src="/assets/mc_atlanta/4" alt="Screenshot of the Guide to Atlanta website" width=1200 height=4688 class="w-100" %}
   </div>
 
 </div>

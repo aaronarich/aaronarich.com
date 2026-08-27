@@ -42,7 +42,7 @@ order: 5
 <div class="fl pv3 pv3-ns">
 
   <div class="fr-ns w-100 ml3-l mv3 browser">
-    <img alt="Screenshot of the MailChimp Creative website" src="{{ site.url }}/assets/mc_creative/1.jpg" class="w-100"/>
+    {% include image.html src="/assets/mc_creative/1" alt="Screenshot of the MailChimp Creative website" width=1200 height=4818 class="w-100" eager=true %}
   </div>
 
 </div>
@@ -50,7 +50,7 @@ order: 5
 <div class="fl pv3 pv3-ns">
 
   <div class="fl-ns w-100 mv3 browser">
-    <img alt="Screenshot of a flashy hover-state on the MailChimp Creative website" src="{{ site.url }}/assets/mc_creative/2.gif" class="w-100"/>
+    {% include video.html src="/assets/mc_creative/2" alt="Screenshot of a flashy hover-state on the MailChimp Creative website" width=1080 height=576 class="w-100" %}
   </div>
 
 </div>

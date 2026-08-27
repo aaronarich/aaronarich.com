@@ -1,0 +1,13 @@
+{%- comment -%}
+  Silent looping video (replaces animated GIFs at a fraction of the size).
+  Usage: {% include video.html src="/assets/dir/2" alt="..." width=1080 height=577 %}
+  `src` is the path WITHOUT extension; expects `<src>.webm`, `<src>.mp4`, `<src>-poster.webp`.
+{%- endcomment -%}
+<video class="{{ include.class | default: 'w-100' }}"
+       width="{{ include.width }}" height="{{ include.height }}"
+       poster="{{ include.src | relative_url }}-poster.webp"
+       aria-label="{{ include.alt | escape }}"
+       autoplay loop muted playsinline>
+  <source src="{{ include.src | relative_url }}.webm" type="video/webm">
+  <source src="{{ include.src | relative_url }}.mp4" type="video/mp4">
+</video>

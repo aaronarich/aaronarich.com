@@ -1,30 +1,38 @@
----
 title: Aaron A. Rich
-timezone: UTC
-collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
 description: Front-End Developer working in Atlanta, GA - Specializing in building
   websites and consulting for small businesses.
-baseurl: ''
 url: https://aaronarich.com
-permalink: "/:categories/:year/:month/:title/"
+baseurl: ""
+timezone: UTC
 author: Aaron A. Rich
+github_username: aaronarich
 social:
   name: Aaron A. Rich
   links:
-  - https://github.com/aaronarich
-  - https://twitter.com/aaronarich
-  - https://instagram.com/aaronarich/
-twitter_username: aaronarich
-github_username: aaronarich
+    - https://github.com/aaronarich
+    - https://instagram.com/aaronarich/
+
+permalink: "/:categories/:year/:month/:title/"
 markdown: kramdown
+
+sass:
+  style: compressed
+  sourcemap: never
+
 plugins:
-- jekyll-feed
-- jekyll-gist
-- jekyll-seo-tag
-- jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Cloudflare Pages reads security/caching headers from _headers in the build output.
+include:
+  - _headers
+
+exclude:
+  - README.md
+  - jekyll.log
+  - wrangler.toml
+  - scripts/
+  - node_modules/
+  - vendor/
+  - .jekyll-cache/

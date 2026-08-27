@@ -1,0 +1,38 @@
+// Shared variables and mixins for the v1 theme.
+// Consumed by the other partials via `@use "variables" as *;`.
+
+$base-font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif !default;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+$gutter:           15px !default;
+
+$text-color:       #565656 !default;
+$background-color: #ffffff !default;
+$brand-color:      #5C7140 !default;
+$brand-color-dark: #33451C !default;
+
+$grey-color:       #787878 !default;
+$grey-color-light: #dedede !default; // lighten($grey-color, 40%)
+$grey-color-dark:  #383838 !default; // darken($grey-color, 25%)
+
+$white-color:      #ffffff !default;
+
+// Width of the content area
+$content-width:    1080px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        1024px !default;
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}

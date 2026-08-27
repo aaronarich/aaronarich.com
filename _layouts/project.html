@@ -2,14 +2,14 @@
 layout: default
 ---
 
-<main class="w-100 center">
+<article class="w-100 center">
 
   <header class="post-header">
-    <h1 class="f2 f1-m f-headline-l gradient" itemprop="name headline">{{ page.title | escape }}</h1>
+    <h1 class="f2 f1-m f-headline-l gradient">{{ page.title | escape }}</h1>
   </header>
 
-  <div itemprop="articleBody">
+  <div>
     {{ content }}
   </div>
 
-</main>
+</article>

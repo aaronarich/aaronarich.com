@@ -1,0 +1,10 @@
+// v1 theme entry point.
+//
+// `tachyons` is a purged subset of the Tachyons utility framework containing
+// only the classes this site actually uses. The full framework source lives in
+// `_sass/scss/` and is NOT compiled directly; regenerate the subset with
+// `scripts/purge-tachyons.sh` whenever you use a new utility class.
+
+@use "base";
+@use "layout";
+@use "tachyons";

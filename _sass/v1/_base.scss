@@ -91,10 +91,14 @@ a {
   p > & {
     text-decoration: underline;
     text-underline-offset: 0.15em;
+    text-decoration-thickness: 1px;
 
-    // Hover swaps the underline for the border-bottom below (avoids a double line).
+    // Keep the same underline on hover (just thicker) instead of switching to the
+    // border-bottom used elsewhere, so the line does not jump.
     &:hover {
-      text-decoration: none;
+      text-decoration-thickness: 2px;
+      border-bottom: 0;
+      padding-bottom: 0;
     }
   }
 
